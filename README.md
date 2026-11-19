@@ -1,6 +1,10 @@
 # tiny-chess-01 — a 4KB chess engine
 
-`main.py` is an original chess engine written for this bounty. It plays
+[![make.fun · tiny-chess-01](https://make.fun/badge/tiny-chess-01.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![rank](https://make.fun/badge/tiny-chess-01/chaimibvm-a11y/makefun-tiny-chess/rank.svg)](https://make.fun/bounty/tiny-chess-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+[![reward](https://make.fun/badge/tiny-chess-01/chaimibvm-a11y/makefun-tiny-chess/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
+
+`main.py` is an original chess engine written for this bounty. See the bounty page: https://make.fun/bounty/tiny-chess-01 It plays
 every game through the env with a real search: negamax alpha-beta with a
 transposition table, null-move pruning, late-move reductions and killer
 moves, plus a quiescence search over captures, promotions and replies to
@@ -47,3 +51,16 @@ runs the site's own pre-submit checks, size caps included.
 - Mean about Elo 1250, above the 1,154 practice floor. The packed
   `main.py` (2,955 bytes) reproduces the same trial-0 result (Elo 1279)
   as the readable source, so the packing is lossless.
+
+## Run it
+
+```sh
+python3 -P -s main.py
+```
+
+The engine speaks the make.fun env protocol over `MAKEFUN_ENV_URL`
+(see the competition kit) and plays a full trial by itself.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=haayh57w&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
